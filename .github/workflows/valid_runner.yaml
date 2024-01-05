@@ -1,0 +1,11 @@
+name: Valid runner
+on: [push] 
+
+jobs:
+  job1:
+    runs-on: windows
+    steps: 
+      - name: step 1
+        env:
+          DAY_OF_WEEK: Sunday
+        run: echo "Greetings user. Today is $env:DAY_OF_WEEK!" 
