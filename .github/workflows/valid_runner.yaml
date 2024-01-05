@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   job1:
-    runs-on: windows
+    runs-on: ubuntu-latest
     steps: 
       - name: step 1
         env:
